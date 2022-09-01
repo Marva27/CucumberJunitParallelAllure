@@ -18,13 +18,13 @@ import io.cucumber.junit.CucumberOptions;
 		tags = "",
 		plugin = {"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
 				"json:target/cucumber-reports/cucumber.json"})
-public class JunitTest {
+public class CucumberParallelTest {
 
-	@AfterClass
-	public static void generateReport() throws IOException {
-		System.out.println("Generating report....");
-		ReportGenerator report = new ReportGenerator();
-		report.generateReport();
-		System.out.println("Done!!!!");
-	}
+//	@AfterClass
+//	public static void generateReport() throws IOException {
+//		System.out.println("Generating report....");
+//		ReportGenerator report = new ReportGenerator();
+//		report.generateReport();
+//		System.out.println("Done!!!!");
+//	}
 }

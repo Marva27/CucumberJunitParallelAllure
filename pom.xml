@@ -117,6 +117,7 @@
 						<rerunFailingTestsCount>1</rerunFailingTestsCount>
 						<parallel>methods</parallel>
 						<useUnlimitedThreads>true</useUnlimitedThreads>
+						<testFailureIgnore>true</testFailureIgnore>
 					</configuration>
 				</plugin>
 				<plugin>
