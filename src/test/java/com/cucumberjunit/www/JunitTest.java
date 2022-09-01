@@ -16,7 +16,8 @@ import io.cucumber.junit.CucumberOptions;
 		glue = "com.cucumberjunit.www.steps", 
 		dryRun = false,
 		tags = "",
-		plugin = {"json:target/jsonReports/cucumber.json"})
+		plugin = {"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+				"json:target/cucumber-reports/cucumber.json"})
 public class JunitTest {
 
 	@AfterClass
