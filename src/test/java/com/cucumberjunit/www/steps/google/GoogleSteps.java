@@ -44,7 +44,6 @@ public class GoogleSteps {
 	public void i_connect_to_https_www_google_com() throws InterruptedException {
 		logger.info("Connecting " + FileReaderManager.getInstance().getConfigReader().getGoogleURL());
 		hooks.getDriver().get(FileReaderManager.getInstance().getConfigReader().getGoogleURL());
-		Thread.sleep(3000);
 	}
 
 	@Then("I should see Google Home page")
