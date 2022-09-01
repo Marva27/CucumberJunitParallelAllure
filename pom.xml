@@ -82,6 +82,12 @@
 			<artifactId>ashot</artifactId>
 			<version>1.5.4</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>4.7.0</version>
+		</dependency>
 
 	</dependencies>
 
@@ -108,7 +114,7 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>${maven-surefire.version}</version>
 					<configuration>
-						<rerunFailingTestsCount>2</rerunFailingTestsCount>
+						<rerunFailingTestsCount>1</rerunFailingTestsCount>
 						<parallel>methods</parallel>
 						<useUnlimitedThreads>true</useUnlimitedThreads>
 					</configuration>

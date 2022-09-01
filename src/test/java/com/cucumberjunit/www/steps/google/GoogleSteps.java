@@ -66,7 +66,8 @@ public class GoogleSteps {
 		logger.info("Calling areGoogleSearchResultsDisplayed");
 		currentScenario.attach(Files.readAllBytes(Utility.captureScreenshot(hooks.getDriver(), false).toPath()), "image/png",
 				"Google Search Results");
-		Assert.assertTrue("Are Google Search Results displayed?",
-				googlePage.areGoogleSearchResultsDisplayed(searchResults, currentScenario));
+		Assert.fail("No results found!!!");
+//		Assert.assertTrue("Are Google Search Results displayed?",
+//				googlePage.areGoogleSearchResultsDisplayed(searchResults, currentScenario));
 	}
 }
